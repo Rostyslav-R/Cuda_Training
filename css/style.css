@@ -1,0 +1,270 @@
+/* ---------- Сброс стилей ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #383a4e;
+}
+/* ---------- Основные стили ---------- */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* ---------- Навигационное меню ---------- */
+.header {
+    min-height: 596px;
+    padding: 57px 0 145px 0;
+    background-color: #87509c;
+}
+.nav_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo {
+    margin: 0 0 0 60px;
+}
+.nav_menu {
+    display: flex;
+    justify-self: flex-end
+}
+.nav_item {
+    margin: 0 11px 0 0;
+}
+.nav_item:last-child {
+    margin: 0 28px 0 0;
+}
+.nav_link {
+    padding: 10px 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(18 / 16 * 100%);
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav_link:hover {
+    padding: 10px 17px;
+    border-radius: 4px;
+    background-color: #643a79;
+}
+.header_title {
+    max-width: 916px;
+    margin: 0 auto;
+    margin-top: 145px;
+    padding: 0 5px 0 5px;
+    font-size: 42px;
+    line-height: calc(48 / 42 * 100%);
+    font-weight: 700;
+    color: #f7f3ea;
+    text-align: center;
+}
+.header_btn {
+    display: block;
+    width: 293px;
+    min-height: 70px;
+    padding: 28px 80px;
+    margin: 0 auto;
+    margin-top: 54px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: calc(26 / 18 * 100%);
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #eb7d4b;
+}
+@media (max-width:991px) {
+    .nav_logo {
+        margin: 0 0 0 30px;
+    }
+    .nav_item:last-child {
+        margin: 0 13px 0 0;
+    }
+    .not-visible {
+        display: none;
+    }
+    .header_title {
+        padding: 0 30px;
+    }
+}
+@media (max-width:650px) {
+    .header {
+        min-height: 400px;
+        padding: 30px 0 100px 0;
+    }
+    .nav_logo {
+        margin: 0 0 0 15px;
+    }
+    .header_title {
+        margin-top: 55px;
+        padding: 0 15px;
+        font-size: 36px;
+    }
+    .nav_item {
+        margin: 0 5px 0 0;
+    }
+    .nav_link {
+        padding: 5px 10px;
+    }
+}
+@media (max-width:515px) {
+    .header {
+        min-height: 400px;
+        padding: 15px 0 50px 0;
+    }
+    .nav_body {
+        flex-direction: column;
+    }
+    .nav_menu {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .nav_item {
+        margin: 0;
+    }
+    .nav_link {
+        padding: 5px 5px;
+    }
+    .nav_item:last-child {
+        margin: 0;
+    }
+    .header_title {
+        font-size: 30px;
+    }
+    .header_btn {
+        width: 250px;
+        padding: 28px 50px;
+    }
+}
+/* ---------- Секция сервисов ---------- */
+.services {
+    min-height: 747px;
+    padding: 119px 0 128px 0;
+    background-color: #17c2a4;;
+}
+.services_body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+.services_title {
+    font-size: 40px;
+    line-height: calc(40 / 40 *100%);
+    font-weight: 700;
+    color: #ffffff;
+}
+.services_divider {
+    width: 87px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 21px;
+    opacity: 0.14;
+    background-color: #000000;
+}
+.services_text {
+    margin-top: 23px;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: calc(26 / 18 * 100%);
+    font-weight: 400;
+    color: #ffffff;
+}
+.services_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    text-align: center;
+}
+.services_item {
+    max-width: 230px;
+    padding: 0 15px;
+}
+.services_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 124px;
+}
+.services_subtitle {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: calc(24 / 24 *100%);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.services_subtext {
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    font-weight: 300;
+    color: #ffffff;
+}
+@media (max-width:991px) {
+    .services {
+        min-height: 650px;
+        padding: 50px 0 50px 0;
+    }
+    .services_title {
+        font-size: 36px;
+        line-height: calc(36 / 36 *100%);
+    }
+    .services_subtitle {
+        font-size: 20px;
+        line-height: calc(20 / 20 *100%);
+    }
+    .services_subtext {
+        padding: 0 5px;
+        font-size: 15px;
+        line-height: calc(24 / 15 * 100%);
+    }
+}
+@media (max-width:900px) {
+    .services_wrapper {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .services_item {
+        flex: 1 1 50%;
+        margin: 0 36px 20px 36px;
+    }
+}
+@media (max-width:767px) {
+    .services_item {
+        flex: 1 1 50%;
+        margin: 0 20px 20px 20px;
+    }
+}
