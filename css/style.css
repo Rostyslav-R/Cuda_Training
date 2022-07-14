@@ -268,3 +268,143 @@ body {
         margin: 0 20px 20px 20px;
     }
 }
+/* ---------- Секция команды ---------- */
+.team {
+    min-height: 914px;
+    padding: 119px 0 127px 0;
+    background-color: #e7f1f8;
+}
+.team_title {
+    padding: 0 15px;
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3c4761;
+}
+.team_divider {
+    width: 87px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 22px;
+    opacity: 0.74;
+    background-color: #bdd1df;
+}
+.team_text {
+    margin-top: 23px;
+    padding: 0 15px;
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    color: #3c4761;
+}
+.team_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 78px;
+}
+.team_item {
+    max-width: 25%;
+    padding: 0 40px 0 40px;
+    text-align: center;
+}
+.team_item_icon {
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.team_item_icon img {
+    width: 100%;
+    border-radius: 100%;
+}
+.team_item_subtitle {
+    margin-top: 41px;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #27283d;
+}
+.team_item_jobtitle {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: calc(18 / 16 * 100%);
+    font-weight: 400;
+    color: #30bae7;
+}
+.team_item_text {
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    font-weight: 300;
+    color: #3c4761;
+}
+.team_item_social {
+    margin-top: 31px;
+    color: #fff;
+}
+.team_item_social * {
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 16px;
+    background-color: #bdd1df;
+}
+.team_item_social *:not(:last-child) {
+    margin-right: 12px;
+}
+@media (max-width:1090px) {
+    .team_item {
+        padding: 0 20px 0 20px;
+    }
+    .team_item_icon {
+        max-width: 150px;
+    }
+    .team_item_subtitle {
+        font-size: 22px;
+    }
+    .team_item_text {
+        font-size: 15px;
+    }
+    .team_item_social *:not(:last-child) {
+        margin-right: 5px;
+    }
+}
+@media (max-width: 780px) {
+    .team {
+        min-height: 700px;
+        padding: 70px 0 70px 0;
+    }
+    .team_wrapper {
+        flex-wrap: wrap;
+    }
+    .team_item {
+        max-width: 50%;
+        margin-bottom: 30px;
+        padding: 0 30px 0 30px;
+    }
+}
+@media (max-width: 575px) {
+    .team {
+        min-height: 500px;
+        padding: 50px 0 px 0;
+    }
+    .team_title {
+        font-size: 36px;
+    }
+    .team_text {
+        font-size: 18px;
+    }
+    .team_wrapper {
+        margin-top: 30px;
+    }
+    .team_item {
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding: 0 30px 0 20px;
+    }
+}
