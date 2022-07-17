@@ -901,3 +901,41 @@ form {
         font-size: 16px;
     }
 }
+/* ------------ Футер ------------ */
+.footer {
+    padding: 48px 15px;
+    min-height: 112px;
+    background-color: #344b8e;
+}
+.footer_wrap {
+    padding: 15px;
+}
+.footer_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_link {
+    font-size: 24px;
+    line-height: calc(40 / 24 * 100%);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.footer_link:hover {
+    color: #30bae7;
+}
+@media (max-width:991px) {
+    .footer_link {
+        font-size: 24px;
+    }   
+}
+@media (max-width:767px) {  
+    .footer {
+        padding: 25px 15px;
+    }
+    .footer_link {
+        margin: 0 10px;
+    }
+}
