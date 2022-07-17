@@ -782,3 +782,122 @@ body {
         margin-top: 20px;
     }
 }
+/* ------------ Секция про формы обращения ------------ */
+.form {
+    min-height: 819px;
+    padding: 120px 0 115px 0; 
+    background-color: #3c5499;
+}
+.form_title {
+    padding: 0 15px;
+    font-size: 40px;
+    line-height: calc(29 / 40 * 100%);
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.form_divider {
+    width: 87px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 21px;
+    background-color: #273a71;
+}
+.form_text {
+    margin-top: 23px;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: calc(26 / 18 * 100%);
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+.form_wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    margin-top: 76px;
+    padding: 0 15px;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.form_name {
+    width: 48%;
+    min-height: 56px;
+    padding: 20px 25px;
+    background-color: #273a71;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ffffff;
+}
+.form_email {
+    width: 48%;
+    min-height: 56px;
+    padding: 20px 25px;
+    background-color: #273a71;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ffffff;
+}
+.form_textarea {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 27px;
+    padding: 20px 25px;
+    background-color: #273a71;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ffffff;
+    align-self: center;
+}
+.form_btn {
+    display: block;
+    width: 293px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 59px;
+    border-radius: 3px;
+    background-color: #30bae7;
+    font-size: 18px;
+    line-height: calc(26 / 18 * 100%);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+@media (max-width:575px) {
+    .form {
+        min-height: 500px;
+        padding: 50px 0 50px 0; 
+        background-color: #3c5499;
+    }
+    .form_title {
+        font-size: 30px;
+    }
+    .form_text {
+        font-size: 16px;
+    }
+    .form_wrap {
+        margin-top: 30px;
+    }
+    .form_name {
+        width: 100%;
+        font-size: 16px;
+    }
+    .form_email {
+        width: 100%;
+        margin-top: 23px;
+        font-size: 16px;
+    }
+    .form_textarea {
+        font-size: 16px;
+    }
+    .form_btn {
+        font-size: 16px;
+    }
+}
